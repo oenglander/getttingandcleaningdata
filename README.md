@@ -17,13 +17,11 @@
 ######To run run_analysis.R
 
 -Download the Human Activity Recognition Using Smartphones Dataset from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-
 -Set R working directory using setwd() to directory where the data is located
-
 -Load the following libraries: dplyr, tidy, reshape, reshape2
 
 ######A code book (codebook.md) is included and describes the variables, the data, and steps performed to clean up the data.
 
-######*https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html
 
+######*https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html
 ######*http://vita.had.co.nz/papers/tidy-data.html
