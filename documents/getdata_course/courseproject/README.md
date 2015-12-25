@@ -1,9 +1,8 @@
 ###Getting and Cleaning Data Course Project
-####Project Overview
+####Project Overview:
 
 ######The purpose of this project is to implement the concepts of *tidy data** to yield a tidy dataset.
-######Per the project's guidelines, the following steps are executed using the code found in *run_analysis.R*:
- 
+######Per the project's guidelines, the following steps are executed using the code found in *run_analysis.R* :
 1. Merge the training and the test sets to create one data set
 2. Extract only the measurements on the mean and standard deviation for each measurement
 3. Place descriptive activity names to name the activities in the data set
@@ -23,5 +22,5 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ######A code book (codebook.md) is included and describes the variables, the data, and steps performed to clean up the data.
 
 
-#######*https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html
-#######*http://vita.had.co.nz/papers/tidy-data.html
+######*https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html
+######*http://vita.had.co.nz/papers/tidy-data.html
