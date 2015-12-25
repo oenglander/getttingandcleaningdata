@@ -11,7 +11,8 @@
 3. Place descriptive activity names to name the activities in the data set
 4. Label the data set with descriptive variable names
 5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject
-6. The resulting tidy dataset contains 180 observations and 68 variables.
+
+######The resulting tidy dataset contains 180 observations and 68 variables.
 
 ######To run run_analysis.R
 
