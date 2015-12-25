@@ -21,6 +21,5 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ######A code book (codebook.md) is included and describes the variables, the data, and steps performed to clean up the data.
 
-
 ######*https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html
 ######*http://vita.had.co.nz/papers/tidy-data.html
