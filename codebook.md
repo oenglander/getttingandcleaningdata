@@ -2,7 +2,7 @@
 
 ######The data used for this project come from the *Human Activity Recognition Using Smartphones Data Set* available from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 ######The data represent the "recordings of 30 subjects performing activities of daily living while carrying a waist-mounted smartphone (Samsung Galaxy S II) with embedded inertial sensors". 
-######More specifically, the data capture various measured variables (see Variables section) for six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) performed by each of the 30 participants (subjects). 
+######More specifically, the data capture various measured variables (see Variables section) for six activities (walking, sitting, standing, etc) performed by each of the 30 participants (subjects). 
 
 ####Variables:
 
@@ -18,7 +18,7 @@
 - 'subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30 (30 subjects in total). 
 - 'subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30 (30 subjects in total). 
 - 'features.txt': Includes a list of all measured variables in X_train and X_test.
-- 'activity_labels.txt': Links the class labels (1,2,3,4,5,6) with their activity name (walking, sitting, standing, etc).
+- 'activity_labels.txt': Links the labels in y_train and y_test (1,2,3,4,5,6) with their descriptive activity name (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING), where 1 == WALKING, 2 == WALKING_UPSTAIRS, etc.
 
 ######Additional data available but not used in this analysis (from Human Activity Recognition Using Smartphones Dataset README file):
 - 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
