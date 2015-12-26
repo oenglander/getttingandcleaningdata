@@ -31,16 +31,16 @@
 1. Merge the training and the test sets to create one data set 
       - using rbind to merge rows of train and test data sets 
       - checking dimensions all along to ensure merge is done correctly
-2. Extract only the measurements on the mean and standard deviation for each measurement - 
-- using grep to search for matches to specified arguments (mean and std) in column 2 of features.txt
-- 66 relevant measurement columns remain following grep operation 
-- cleaning up/editing labels to provide descriptive variable names
+2. Extract only the measurements on the mean and standard deviation for each measurement
+      - using grep to search for matches to specified arguments (mean and std) in column 2 of features.txt
+      - sixty six (66) relevant measurement columns remain following grep operation 
+      - cleaning up/editing labels to provide descriptive variable names
 3. Place descriptive activity names to name the activities in the data set 
-- activity_labels.txt contains descriptive activity names (6 levels including walking, sitting, standing) that are matched up with numerical values/labels in y dataset
+      - activity_labels.txt contains descriptive activity names (6 levels including walking, sitting, standing) that are matched up with numerical values/labels in y dataset
 4. Label the data set with descriptive variable names 
-- forming complete dataset using cbind of 3 merged datasets w/ descriptive variables names (as completed in step 2)
+      - forming the complete dataset using cbind of the three merged datasets w/ descriptive variable names (as completed in step 2)
 5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject 
-- using melt operation followed by dcast operation on complete dataset to yield dataset with average of each variable for each activity and each subject
-- using melt results in a dataset with 4 columns (Subject, Activity, variable, value)
-- next, using dcast to calculate the average for each activity and each subject
-- final dataset contains 180 rows (30 subjects * 6 activities) and 68 columns (Subject, Activity, mean of 66 measured variables)
+      - using melt operation followed by dcast operation on the complete dataset to yield a dataset with the average of each variable for each activity and each subject
+      - using melt results in a dataset with 4 columns (Subject, Activity, variable, value)
+      - next, using dcast it is possible to calculate the average (mean) for each activity and each subject
+      - the final dataset contains 180 rows (30 subjects * 6 activities) and 68 columns (Subject, Activity, mean of 66 measured variables)
