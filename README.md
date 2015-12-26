@@ -7,7 +7,7 @@
 ######Per the project's guidelines, the following steps are executed using the code found in *run_analysis.R* :
 1. Merge the training and the test sets to create one data set - *using rbind to merge rows of train and test data sets & checking dimensions all along to ensure merge is done correctly*
 2. Extract only the measurements on the mean and standard deviation for each measurement - *using grep to search for matches to specified arguments (mean and std) in column 2 of features.txt; clean up/edit labels to provide descriptive variable names* 
-3. Place descriptive activity names to name the activities in the data set - activity_labels.txt contains descriptive activity names (6 levels inclding walking, sitting, standing) that match up with numerical values in y dataset
+3. Place descriptive activity names to name the activities in the data set - *activity_labels.txt contains descriptive activity names (6 levels inclding walking, sitting, standing) that match up with numerical values in y dataset*
 4. Label the data set with descriptive variable names - *forming complete dataset using cbind of 3 merged datasets w/ descriptive variables names (step 2)*
 5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject - *using melt and dcast to yield desired dataset*
 
