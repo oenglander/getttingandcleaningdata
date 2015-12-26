@@ -29,8 +29,8 @@
 
 ####Steps performed to clean up the data:
 1. Merge the training and the test sets to create one data set 
-      using rbind to merge rows of train and test data sets 
-      checking dimensions all along to ensure merge is done correctly
+      - using rbind to merge rows of train and test data sets 
+      - checking dimensions all along to ensure merge is done correctly
 2. Extract only the measurements on the mean and standard deviation for each measurement - 
 - using grep to search for matches to specified arguments (mean and std) in column 2 of features.txt
 - 66 relevant measurement columns remain following grep operation 
