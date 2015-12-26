@@ -4,16 +4,16 @@
 
 ######The data used for this project come from the *Human Activity Recognition Using Smartphones Data Set* available from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 ######The data represent the "recordings of 30 subjects performing activities of daily living while carrying a waist-mounted smartphone (Samsung Galaxy S II) with embedded inertial sensors". 
-######More specifically, the data capture various measured variables (see variables info section) for six activities (walking, sitting, standing, etc (see data section)) performed by each of the 30 participants (refered to as *subjects*). 
+######More specifically, the data capture a range of measured variables (see variables info section) for six activities (walking, sitting, standing, etc (see data section)) performed by each of the 30 participants (refered to as *subjects*). 
 
 
 ####Variable info
 ######The list below includes only the 66 *mean* and *std* variables required for final data set 
 ######Some notes regarding variables (per features_info.txt):
 - *X*, *Y*, and *Z* are used to denote 3-axial signals in the X, Y and Z directions
-- accelerometer (*acc*) and gyroscope (*gyro*)signals data were collected
-- acceleration signal was separated into *body* and *gravity* acceleration signals
-- body linear acceleration and angular velocity were derived in time to obtain *Jerk* signals
+- Accelerometer (*acc*) and gyroscope (*gyro*)signals data were collected
+- Acceleration signal was separated into *body* and *gravity* acceleration signals
+- Body linear acceleration and angular velocity were derived in time to obtain *Jerk* signals
 - Fast Fourier Transform (FFT) was applied to produce frequency domain signals
 - *Mag* = magnitude
 
@@ -107,19 +107,19 @@
 
 ####Steps performed to clean up the data
 1. Merge the training and the test sets to create one data set 
-      - using rbind to merge rows of train and test data sets 
-      - checking dimensions all along to ensure merge is done correctly
+      - using *rbind* to merge rows of train and test data sets 
+      - checking data dimensions all along to ensure merge is done correctly
 2. Extract only the measurements on the mean and standard deviation for each measurement
-      - using grep to search for matches to specified arguments (mean and std) in column 2 of features.txt
+      - using *grep* to search for matches to specified arguments (mean and std) in column 2 of features.txt
       - sixty six (66) relevant measurement columns remain following grep operation 
       - cleaning up/editing labels to provide descriptive variable names
 3. Place descriptive activity names to name the activities in the data set 
       - activity_labels.txt contains descriptive activity names (6 levels including walking, sitting, standing) that are matched up with numerical values/labels in y dataset
 4. Label the data set with descriptive variable names 
-      - forming the complete dataset using cbind of the three merged datasets w/ descriptive variable names (as completed in step 2)
+      - forming the complete dataset using *cbind* of the three merged datasets (step 1) w/ descriptive variable names (as addressed in step 2)
 5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject 
-      - using melt operation followed by dcast operation on the complete dataset to yield a dataset with the average of each variable for each activity and each subject
-      - using melt results in a dataset with 4 columns (Subject, Activity, variable, value)
-      - next, using dcast it is possible to calculate the average (mean) for each activity and each subject
-      - the final dataset contains 180 rows or observations (30 subjects * 6 activities) and 68 columns (Subject, Activity, mean of 66 measured variables)
-      - using write.table to write dataset to .txt file
+      - using *melt* operation followed by *dcast* operation on the complete dataset to yield a dataset with the average of each variable for each activity and each subject
+      - using *melt* results in a dataset with 4 columns (Subject, Activity, variable, value)
+      - next, using *dcast* it is possible to calculate the average (mean) for each activity and each subject
+      - the final dataset contains 180 rows or observations (30 subjects * 6 activities) and 68 columns (Subject, Activity, mean of each of 66 mean or std measured variables)
+      - using *write.table* to write dataset to .txt file
