@@ -1,20 +1,23 @@
+#####codebook.md
+
 ####Codebook.md designed to accompany README.md and run_analysis.R
 
 ######The data used for this project come from the *Human Activity Recognition Using Smartphones Data Set* available from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 ######The data represent the "recordings of 30 subjects performing activities of daily living while carrying a waist-mounted smartphone (Samsung Galaxy S II) with embedded inertial sensors". 
-######More specifically, the data capture various measured variables (see Variables section) for six activities (walking, sitting, standing, etc) performed by each of the 30 participants (subjects). 
+######More specifically, the data capture various measured variables (see variables info section) for six activities (walking, sitting, standing, etc (see data section)) performed by each of the 30 participants (refered to as *subjects*). 
 
-####Variables:
-######Displaying only 66 mean and std variables required for final data set 
+
+####Variable info
+######The list below includes only the 66 *mean* and *std* variables required for final data set 
 ######Some notes regarding variables (per features_info.txt):
-- X, Y, and Z are used to denote 3-axial signals in the X, Y and Z directions
-- accelerometer (acc) and gyroscope (gyro)signals data were collected
-- acceleration signal was separated into body and gravity acceleration signals
-- body linear acceleration and angular velocity were derived in time to obtain Jerk signals
+- *X*, *Y*, and *Z* are used to denote 3-axial signals in the X, Y and Z directions
+- accelerometer (*acc*) and gyroscope (*gyro*)signals data were collected
+- acceleration signal was separated into *body* and *gravity* acceleration signals
+- body linear acceleration and angular velocity were derived in time to obtain *Jerk* signals
 - Fast Fourier Transform (FFT) was applied to produce frequency domain signals
-- Mag = magnitude
+- *Mag* = magnitude
 
-
+######List of measured variables:
 - time BodyAcc-mean -X (time domain)
 - time BodyAcc-mean -Y (time domain)
 - time BodyAcc-mean -Z (time domain)
@@ -83,7 +86,8 @@
 - frequency BodyBodyGyroJerkMag-std() (frequency domain)
 
 
-####Data:
+
+####Data
 ######The data sets were randomly divided into two sets, where 70% of the subjects generate the training data and 30% the test data.  Please note below, the *train* or *test* designation for each of the first six data sets listed below.
 - 'X_train.txt': Training set of measured data (561 measured variables w/ no column headings/variable names).
 - 'y_train.txt': Training labels (1,2,3,4,5,6).
@@ -101,7 +105,7 @@
 
 
 
-####Steps performed to clean up the data:
+####Steps performed to clean up the data
 1. Merge the training and the test sets to create one data set 
       - using rbind to merge rows of train and test data sets 
       - checking dimensions all along to ensure merge is done correctly
