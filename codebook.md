@@ -11,9 +11,9 @@
 
 ####Data:
 ######The data sets were randomly divided into two sets, where 70% of the subjects generate the training data and 30% the test data.  Please note below, the *train* or *test* designation for each of the first six data sets listed below.
-- 'X_train.txt': Training set of measured data.
+- 'X_train.txt': Training set of measured data (no column headings/variable names).
 - 'y_train.txt': Training labels (1,2,3,4,5,6).
-- 'X_test.txt': Test set of measured data.
+- 'X_test.txt': Test set of measured data (no column headings/variable names).
 - 'y_test.txt': Test labels (1,2,3,4,5,6).
 - 'subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30 (30 subjects in total). 
 - 'subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30 (30 subjects in total). 
