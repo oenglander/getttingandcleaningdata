@@ -44,3 +44,4 @@
       - using melt results in a dataset with 4 columns (Subject, Activity, variable, value)
       - next, using dcast it is possible to calculate the average (mean) for each activity and each subject
       - the final dataset contains 180 rows (30 subjects * 6 activities) and 68 columns (Subject, Activity, mean of 66 measured variables)
+      - using write.table to write dataset to .txt file
