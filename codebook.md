@@ -1,3 +1,5 @@
+####Codebook.md designed to accompany README.md and run_analysis.R
+
 ######The data used for this project come from the *Human Activity Recognition Using Smartphones Data Set* available from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 ######The data represent the "recordings of 30 subjects performing activities of daily living while carrying a waist-mounted smartphone (Samsung Galaxy S II) with embedded inertial sensors". 
 ######More specifically, the data capture various measured variables (see Variables section) for six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) performed by each of the 30 participants (subjects). 
