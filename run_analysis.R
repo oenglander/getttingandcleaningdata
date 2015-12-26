@@ -6,7 +6,7 @@ library(tidyr)
 #
 #1 - Merge the training and the test sets to create one data set
 #using rbind to merge rows of train and test data sets & checking dimensions all along to ensure merge is done correctly 
-#X_train & X_test --> recorded data
+#X_train & X_test --> recorded data for a range of variables
 XtrainData <- read.table("./train/X_train.txt")
 dim(XtrainData)
 #[1] 7352  561
@@ -16,7 +16,7 @@ dim(XtestData)
 joinXData <- rbind(XtrainData, XtestData)
 dim(joinXData)
 #[1] 10299   561 --> number of rows is the sum of X_train + X_test  
-#y_train & y_test --> numberical representation for type of activity
+#y_train & y_test --> numerical representation for type of activity
 ytrainData <- read.table("./train/y_train.txt")
 dim(ytrainData)
 #[1] 7352    1
@@ -46,7 +46,7 @@ dim(features)
 #extract only mean and std features from column 2 of features; grep searches for matches to specified arguments 
 meanORstd <- grep("mean\\(\\)|std\\(\\)", features[, 2])
 length(meanORstd)
-#[1] 66 --> only mean and std variables
+#[1] 66 --> only 66 mean and std variables
 joinXData <- joinXData[, meanORstd]
 dim(joinXData)
 #[1] 10299    66 --> merged X data with extracted columns only
