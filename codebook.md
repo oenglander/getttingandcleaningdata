@@ -14,6 +14,7 @@
 - Fast Fourier Transform (FFT) was applied to produce frequency domain signals
 - Mag = magnitude
 
+
 - time BodyAcc-mean -X (time domain)
 - time BodyAcc-mean -Y (time domain)
 - time BodyAcc-mean -Z (time domain)
