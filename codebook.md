@@ -4,7 +4,15 @@
 ######The data represent the "recordings of 30 subjects performing activities of daily living while carrying a waist-mounted smartphone (Samsung Galaxy S II) with embedded inertial sensors". 
 ######More specifically, the data capture various measured variables (see Variables section) for six activities (walking, sitting, standing, etc) performed by each of the 30 participants (subjects). 
 
-####Variables*:
+####Variables:
+######Displaying only 66 mean and std variables required for final data set 
+######Some notes regarding variables (per features_info.txt):
+- X, Y, and Z are used to denote 3-axial signals in the X, Y and Z directions
+- accelerometer (acc) and gyroscope (gyro)signals data were collected
+- acceleration signal was separated into body and gravity acceleration signals
+- body linear acceleration and angular velocity were derived in time to obtain Jerk signals
+- Fast Fourier Transform (FFT) was applied to produce frequency domain signals
+- Mag = magnitude
 - time BodyAcc-mean -X (time domain)
 - time BodyAcc-mean -Y (time domain)
 - time BodyAcc-mean -Z (time domain)
@@ -72,7 +80,6 @@
 - frequency BodyBodyGyroJerkMag-mean() (frequency domain)
 - frequency BodyBodyGyroJerkMag-std() (frequency domain)
 
-######*displaying only 66 mean and std variables required for final data set 
 
 ####Data:
 ######The data sets were randomly divided into two sets, where 70% of the subjects generate the training data and 30% the test data.  Please note below, the *train* or *test* designation for each of the first six data sets listed below.
