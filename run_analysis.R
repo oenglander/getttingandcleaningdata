@@ -82,6 +82,6 @@ dim(complete_dataset_melt)
 tidy_data <- dcast(complete_dataset_melt, Subject + Activity ~ variable, mean)
 dim(tidy_data)
 #[1] 180  68
-write.table(tidy_data, file = "./tidy_data.txt")
+write.table(tidy_data, file = "./tidy_data_final.txt", row.name = FALSE)
 
 
