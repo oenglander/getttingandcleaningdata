@@ -50,7 +50,7 @@ length(meanORstd)
 joinXData <- joinXData[, meanORstd]
 dim(joinXData)
 #[1] 10299    66 --> merged X data with extracted columns only
-#clean up and make variable names clearer
+#clean up and make variable names clearer; gsub to replace multiple instances
 names(joinXData) <- gsub("\\(\\)", "", features[meanORstd, 2])
 names(joinXData) <- gsub("^t", "time", names(joinXData))
 names(joinXData) <- gsub("^f", "frequency", names(joinXData))
